@@ -1,0 +1,31 @@
+.itfe-image-ticker-container {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 0; /* Ensure no padding */
+    border: none; /* Ensure no border */
+}
+
+.itfe-image-ticker-content {
+    display: flex;
+    white-space: nowrap;
+    position: absolute;
+    transition: transform 0s linear; /* Ensure smooth scrolling */
+}
+
+.itfe-image-ticker-left-to-right .itfe-image-ticker-content {
+    /* Styles for left-to-right direction, if any */
+}
+
+.itfe-image-ticker-right-to-left .itfe-image-ticker-content {
+    /* Styles for right-to-left direction, if any */
+}
+
+.itfe-image-ticker-container img {
+    height: auto;
+    display: block; /* Ensure no extra space around images */
+}
